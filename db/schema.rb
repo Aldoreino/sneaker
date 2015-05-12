@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150512215054) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "pgit merge masterlpgsql"
 
   create_table "shoes", force: :cascade do |t|
     t.string   "name"
