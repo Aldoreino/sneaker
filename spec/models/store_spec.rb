@@ -14,7 +14,10 @@ describe Store do
   it "is invalid without a state" do
     FactoryGirl.build(:store, state:nil).should_not be_valid
   end
-  it "is invlaid wihtout a zip" do
+  it "is invalid without a zip" do
     FactoryGirl.build(:store, zip:nil).should_not be_valid
+  end
+  it "is invalid wihtout an inventory" do
+    FactoryGirl.build(:store, inventory:nil).should_not be_valid
   end
 end
