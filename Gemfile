@@ -39,6 +39,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec'
+  gem 'faker'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
