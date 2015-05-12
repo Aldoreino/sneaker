@@ -36,4 +36,24 @@ ActiveRecord::Schema.define(version: 20150512215054) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "shoes", force: :cascade do |t|
+    t.string   "name"
+    t.string   "brand"
+    t.integer  "cost"
+    t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "inventory"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
